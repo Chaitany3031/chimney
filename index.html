@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Navbar</title>
+  <title>chimney</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body class="bg-black text-white">
 
-<header class="z-50 relative flex items-center justify-between p-4 h-[15vh] border-b-2 border-yellow-400">
+<header class="z-50 relative flex items-center justify-between p-4 h-[15vh] border-b-2 border-yellow-400 animate__animated animate__fadeInDown ">
   <!-- Background -->
    <div class="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
   <img class="absolute z-0 w-[98%] h-full object-cover" src="./assets/bricks-bg.webp" alt="">
@@ -38,20 +42,20 @@
   <!-- Left: Service Categories -->
   <div class="space-y-2 w-full">
     <div class="font-bold text-black bg-yellow-400 px-3 py-2 rounded">🔍 Inspection</div>
-    <div class="font-bold">🧹 Cleaning</div>
-    <div class="font-bold">🛠 Repair</div>
-    <div class="font-bold">🔧 Installation</div>
-    <div class="font-bold">🧱 Replacements</div>
-    <div class="font-bold">🏗 Construction / Rebuild</div>
+    <div class="font-bold hover:text-yellow-400 cursor-pointer">🧹 Cleaning</div>
+    <div class="font-bold hover:text-yellow-400 cursor-pointer">🔧 Installation</div>
+    <div class="font-bold hover:text-yellow-400 cursor-pointer">🧱 Replacements</div>
+    <div class="font-bold hover:text-yellow-400 cursor-pointer">🛠 Repair</div>
+    <div class="font-bold hover:text-yellow-400 cursor-pointer">🏗 Construction / Rebuild</div>
   </div>
 
   <!-- Right: Sub-services for "Inspection" -->
   <div class="text-sm space-y-1">
-    <div class="hover:text-yellow-400 cursor-pointer">🔥 Chimney Inspection Level 1</div>
-    <div class="hover:text-yellow-400 cursor-pointer">🔥 Chimney Inspection Level 2</div>
-    <div class="hover:text-yellow-400 cursor-pointer">🔥 Chimney Inspection Level 3</div>
-    <div class="hover:text-yellow-400 cursor-pointer">🔥 Chimney Maintenance</div>
-    <div class="hover:text-yellow-400 cursor-pointer">🔥 Pellet Stove Inspection</div>
+    <div class="hover:text-yellow-400 cursor-pointer hover:translate-x-2">🔥 Chimney Inspection Level 1</div>
+    <div class="hover:text-yellow-400 cursor-pointer hover:translate-x-2">🔥 Chimney Inspection Level 2</div>
+    <div class="hover:text-yellow-400 cursor-pointer hover:translate-x-2">🔥 Chimney Inspection Level 3</div>
+    <div class="hover:text-yellow-400 cursor-pointer hover:translate-x-2">🔥 Chimney Maintenance</div>
+    <div class="hover:text-yellow-400 cursor-pointer hover:translate-x-2">🔥 Pellet Stove Inspection</div>
   </div>
 </div>
 
@@ -88,10 +92,10 @@
     <span>1234567890</span>
   </div>
 </header>
-<section class="relative h-[85vh] flex items-center justify-center bg-fixed bg-center bg-cover" style="background-image: url('./assets/bricks-bg-logo.jpg');">
+<section class="animate__animated animate__fadeInUp relative h-[85vh] flex items-center justify-center bg-fixed bg-center bg-cover" style="background-image: url('./assets/bricks-bg-logo.jpg');">
   <!-- Background Video -->
   <div class="relative z-20 w-full h-full">
-    <video class="absolute z-0 top-0 left-0 w-full h-full object-cover" src="./assets/video.mp4" autoplay loop muted></video>
+    <video class="absolute z-0 top-0 left-0 w-full h-full object-cover" src="./assets/A1 Chimney Banner Video - A1 Chimney (720p, h264).mp4" autoplay loop muted></video>
 
     <!-- Content Box -->
     <div class="absolute z-20 bottom-0 m-4 sm:m-6 bg-[#000000B3] border-2 border-yellow-400 p-4 sm:p-6 w-[90vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] flex flex-col gap-3 text-white">

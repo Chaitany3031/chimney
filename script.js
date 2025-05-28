@@ -1,11 +1,21 @@
- const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
+function toggleDropdown(id) {
+  const dropdowns = ['servicesDropdown', 'aboutDropdown'];
 
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
+  dropdowns.forEach(dropdownId => {
+    const dropdown = document.getElementById(dropdownId);
+    if (dropdownId === id) {
+      dropdown.classList.toggle('hidden');
+    } else {
+      dropdown.classList.add('hidden');
+    }
   });
+}
 
-  function toggleDropdown(id) {
-    const dropdown = document.getElementById(id);
-    dropdown.classList.toggle('hidden');
+
+document.addEventListener('click', function (event) {
+  const isClickInside = event.target.closest('nav');
+  if (!isClickInside) {
+    document.getElementById('servicesDropdown').classList.add('hidden');
+    document.getElementById('aboutDropdown').classList.add('hidden');
   }
+});
