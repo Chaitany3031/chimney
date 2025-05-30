@@ -142,7 +142,8 @@
     <!-- Cards Grid -->
     <div class="mt-4 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 w-full px-4">
       <!-- Card -->
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black ">
+        <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Sweep</div>
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -158,7 +159,9 @@
           </button>
         </div>
       </div>
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Inspection</div>
+
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -174,7 +177,9 @@
           </button>
         </div>
       </div>
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Repair</div>
+
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -190,7 +195,8 @@
           </button>
         </div>
       </div>
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Cap</div> 
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -206,7 +212,26 @@
           </button>
         </div>
       </div>
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Cleaning</div>
+        <div class="w-full cursor-pointer">
+
+          <img src="./assets/animal.webp" alt="Animal Removal" />
+        </div>
+        <div class="bg-white flex flex-col gap-5 px-4">
+          <h1 class="text-orange-500 mt-3 text-lg font-bold cursor-pointer hover:text-orange-700">
+            Chimney Animal Removal
+          </h1>
+          <p class="text-black text-sm">
+            Are you tired of having an annoying smell in chimney pipes due to any dead animal? Or have you noticed...
+          </p>
+          <button class="text-red-700 flex justify-start mb-5 cursor-pointer">
+            Read More
+          </button>
+        </div>
+      </div>
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Cleaning</div>
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -222,7 +247,8 @@
           </button>
         </div>
       </div>
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Cleaning</div>
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -238,23 +264,8 @@
           </button>
         </div>
       </div>
-      <div class="p-4 text-white">
-        <div class="w-full cursor-pointer">
-          <img src="./assets/animal.webp" alt="Animal Removal" />
-        </div>
-        <div class="bg-white flex flex-col gap-5 px-4">
-          <h1 class="text-orange-500 mt-3 text-lg font-bold cursor-pointer hover:text-orange-700">
-            Chimney Animal Removal
-          </h1>
-          <p class="text-black text-sm">
-            Are you tired of having an annoying smell in chimney pipes due to any dead animal? Or have you noticed...
-          </p>
-          <button class="text-red-700 flex justify-start mb-5 cursor-pointer">
-            Read More
-          </button>
-        </div>
-      </div>
-      <div class="p-4 text-white">
+      <div class="p-4 text-white bg-black">
+                <div class="text-white text-2xl font-bold text-orange-600 mb-4 flex justify-center text-center ">Chimney Cleaning</div>
         <div class="w-full cursor-pointer">
           <img src="./assets/animal.webp" alt="Animal Removal" />
         </div>
@@ -273,6 +284,206 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="bg-black text-white p-4" x-data="{ openTab: null }">
+  <!-- Header -->
+  <h2 class="text-orange-500 text-2xl font-bold text-center mb-6">
+    MORE CHIMNEY & FIREPLACE SERVICES WE PROVIDE
+  </h2>
+
+  <!-- Tabs -->
+  <div class="flex flex-wrap justify-center gap-4">
+    <!-- Each button sets openTab to a unique value -->
+    <button @click="openTab = openTab === 'inspection' ? null : 'inspection'"
+      class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded">
+      🔍 <span class="font-bold">Inspection</span>
+    </button>
+    <button @click="openTab = openTab === 'cleaning' ? null : 'cleaning'"
+      class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded">
+      🧹 <span class="font-bold">Cleaning</span>
+    </button>
+    <button @click="openTab = openTab === 'repair' ? null : 'repair'"
+      class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded">
+      🛠️ <span class="font-bold">Repair</span>
+    </button>
+    <button @click="openTab = openTab === 'install' ? null : 'install'"
+      class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded">
+      🔧 <span class="font-bold">Installation</span>
+    </button>
+  </div>
+
+  <!-- Dropdowns -->
+  <div class="mt-6 space-y-6">
+    <!-- Inspection Dropdown -->
+    <div x-show="openTab === 'inspection'" x-transition class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Chimney Animal Removal</div>
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Chimney Nest Removal</div>
+    </div>
+
+    <!-- Cleaning Dropdown -->
+    <div x-show="openTab === 'cleaning'" x-transition class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Chimney Sweep</div>
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Chimney Sweep Near Me</div>
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Dryer Vent Cleaning</div>
+    </div>
+
+    <!-- Repair Dropdown -->
+    <div x-show="openTab === 'repair'" x-transition class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Smoke Chamber Cleaning</div>
+    </div>
+
+    <!-- Installation Dropdown -->
+    <div x-show="openTab === 'install'" x-transition class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-orange-500 px-4 py-2 rounded flex items-center gap-2">🔥 Chimney Deep Cleaning (PCR)</div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- what we do  -->
+ <section>
+  <div
+    class="p-8 relative w-full overflow-hidden bg-cover bg-center bg-no-repeat"
+    style="background-image: url('./assets/bricks-bg-logo-w.webp');"
+  >
+    <!-- Overlay -->
+    <div
+      class="absolute inset-0 z-10 bg-[linear-gradient(90deg,_#ffffff99_0%,_rgba(30,64,175,0.6)_50%)] opacity-100 transition-[background,border-radius,opacity] duration-300"
+    ></div>
+
+    <!-- Content -->
+    <div class="flex flex-col md:flex-row relative z-20 gap-8">
+      <div class="md:w-1/2 flex flex-col items-start justify-center">
+        <h2 class="text-4xl md:text-6xl text-black font-bold leading-tight">
+          WHAT <span class="text-orange-500">WE</span> DO?
+        </h2>
+        <p class="mt-4 text-black font-bold text-xs md:text-sm leading-relaxed">
+          If you own a home with a fireplace and you are looking for a reliable chimney maintenance company,
+          schedule a chimney inspection appointment with A1 Chimney specialist today.
+        </p>
+        <p class="mt-4 text-black font-bold text-xs md:text-sm leading-relaxed">
+          A1 Chimney have been cleaning and inspecting all types of chimneys and appliances in the greater area of
+          your town for several years. Whether you are looking for advice, a sweep, an inspection a cowl fitted,
+          a stove installed or a fire back replaced we are happy to give a free quote and some helpful advice,
+          making us first choice of our customers.
+        </p>
+      </div>
+      <div class="md:w-1/2  lg:border-4 lg:border-orange-500 ">
+        <img class="w-full object-cover" src="./assets/fireplace.webp" alt="Fireplace" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-black text-white py-10 px-6">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <!-- A1 Chimney -->
+    <div>
+      <h2 class="text-xl font-bold text-red-600">A1 Chimney</h2>
+      <p class="mt-4 text-xs leading-relaxed text-gray-300">
+        A1 Chimney offers affordable pricing for all of our services and work that is done by a licensed and bonded team. We always strive to give the best experience to our customers.
+      </p>
+
+      <h3 class="mt-6 font-bold text-orange-500 text-md  flex-wrap">Follow Us</h3>
+      <div class="flex items-center mt-4 gap-1">
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="bg-red-600 p-2 rounded text-white hover:bg-red-700">
+          <i class="fas fa-home"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Menu -->
+    <div>
+      <h2 class="text-lg font-bold text-red-600">Quick Menu</h2>
+      <ul class="mt-4 gap-1 text-white">
+        <li>🔥 Home</li>
+        <li>🔥 Our Services</li>
+        <li>🔥 Our Locations</li>
+        <li>🔥 Our Work</li>
+        <li>🔥 About Us</li>
+        <li>🔥 Contact Us</li>
+        <li>🔥 FAQ’s</li>
+        <li>🔥 Blog</li>
+      </ul>
+    </div>
+
+    <!-- Latest Posts -->
+    <div class=" relative lg:left-[-100px] lg:w-[35vw]">
+      <h2 class="text-lg font-bold text-red-600">Latest Posts</h2>
+
+      <div class="mt-4 space-y-4 text-sm text-gray-300">
+        <div class="flex gap-4  w-[100%]">
+          <img src="./assets/sweepers.webp" alt="post" class="w-20 h-16 object-cover" />
+          <div>
+            <p class="text-orange-400 text-xs font-bold">Who Are Chimney Sweepers & How to Hire Professionals?</p>
+            <p class="text-xs">Chimney sweepers are workers who clear soot and ash from chimneys, and are responsible for the</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img src="./assets/sweepers.webp" alt="post" class="w-20 h-16 object-cover" />
+          <div>
+            <p class="text-orange-400 text-xs font-bold">Everything You Need to Know About Chimney Sweeping</p>
+            <p class="text-xs">The History of Chimney Sweeping Back in the 17th century people knew that chimneys needed to</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img src="./assets/sweepers.webp" alt="post" class="w-20 h-16 object-cover" />
+          <div>
+            <p class="text-orange-400 font-bold text-xs">Everything You Need to Know About Chimney Caps</p>
+            <p class="text-xs">To help turn your house into something amazing, or to protect the value of your home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="relative lg:left-[60px]">
+      <h2 class="text-lg  font-bold text-red-600">Contact Info</h2>
+      <ul class="mt-4 space-y-4 text-white text-sm">
+        <li>
+          <span class="text-yellow-400 font-bold">📞 Phone Number:</span><br />
+          (888) 984-4344
+        </li>
+        <li>
+          <span class="text-yellow-400 font-bold">📧 Email Address:</span><br />
+          office@a-1chimney.com
+        </li>
+        <li>
+          <span class="text-yellow-400 font-bold">📍 Service Area:</span><br />
+          Serving the Local Area
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- FontAwesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
 
 
 
