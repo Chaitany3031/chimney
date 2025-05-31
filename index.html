@@ -394,7 +394,7 @@
         </h1>
         <h2 class="text-lg">We have competitive financing offers!</h2>
       </div>
-      <button class="py-1 hover:bg-red-600 hover:text-white transition-all ease-in-out duration-500 w-[25%] bg-yellow-600 h-[30%]">
+      <button class="py-2 px-2 lg:px-0 rounded-lg text-xs lg:text-lg  hover:bg-red-600 hover:text-white transition-all ease-in-out duration-500 w-[25%] bg-yellow-600 h-[30%]">
         Learn More
       </button>
     </div>
@@ -403,35 +403,128 @@
 
 
 <section class="relative overflow-hidden w-full">
-    <img class="absolute w-full h-full " src="./assets/chimney.webp" alt="">
-  <div style="box-shadow: 20px 0px 40px 90px rgba(255, 255, 255, 0.5);
-" class="relative bg-white opacity-80 w-[50%] px-16 py-4 flex flex-col gap-10 shadow-r-xl">
-      <!-- <div class="absolute inset-0 bg-gradient-to-l from-white/80 via-white/30 to-transparent"></div> -->
-    <div class="">
-      <h1 class="text-4xl md:text-6xl font-bold text-black">Why <span class="text-orange-500">Choose</span> Us?</h1>
+  <!-- Background Image -->
+  <img class="absolute w-full h-full object-cover" src="./assets/chimney.webp" alt="Chimney Background" />
+
+  <!-- Content Box -->
+  <div
+    class="relative bg-white bg-opacity-80 w-full md:w-1/2 px-6 md:px-16 py-8 flex flex-col gap-6 md:gap-10 z-10"
+    style="box-shadow: 20px 0px 40px 90px rgba(255, 255, 255, 0.5);"
+  >
+    <!-- Heading -->
+    <div>
+      <h1 class="text-3xl md:text-5xl font-bold text-black">
+        Why <span class="text-orange-500">Choose</span> Us?
+      </h1>
     </div>
-    <p class="text-xl font-bold text-black">We are a well-established locally business based in your town.</p>
-    <div class="flex gap-2">
-      <div class="w-[20%] h-[20%] p-2  border-4  border border-orange-500 rounded-[50%] ">
-        <img src="./assets/check-solid.svg" alt="">
+
+    <!-- Subtitle -->
+    <p class="text-base md:text-xl font-semibold text-black">
+      We are a well-established locally business based in your town.
+    </p>
+
+    <!-- Feature 1 -->
+    <div class="flex flex-col sm:flex-row gap-4 items-start">
+      <div class="lg:w-14 lg:h-14 w-0 h-0 p-2 lg:border-4 border-orange-500 rounded-full flex-shrink-0">
+        <img src="./assets/check-solid.svg" alt="Check Icon" class="w-full h-full object-contain" />
       </div>
       <div>
-        <p class="text-black">Our expert staff have many years’ experience in the chimney business, and have extensive knowledge of all the services and products we offer and supply. We cover all aspects of chimney requirements, from replacement fireplaces right through to building complete new chimney systems, offering one-stop solution to all your chimney services.</p>
+        <p class="text-black text-sm md:text-base">
+          Our expert staff have many years’ experience in the chimney business, and have extensive knowledge of all the services and products we offer and supply. We cover all aspects of chimney requirements, from replacement fireplaces right through to building complete new chimney systems, offering one-stop solution to all your chimney services.
+        </p>
       </div>
     </div>
-    <div class="flex gap-2">
-      <div class="w-[20%] h-[20%] p-2  border-4  border border-orange-500 rounded-[50%] ">
-        <img src="./assets/check-solid.svg" alt="">
+
+    <!-- Feature 2 -->
+    <div class="flex flex-col sm:flex-row gap-4 items-start">
+      <div class="lg:w-14 lg:h-14 w-0 h-0 p-2 lg:border-4 border-orange-500 rounded-full flex-shrink-0">
+        <img src="./assets/check-solid.svg" alt="Check Icon" class="w-full h-full object-contain" />
       </div>
       <div>
-        <p class="text-black">Our expert staff have many years’ experience in the chimney business, and have extensive knowledge of all the services and products we offer and supply. We cover all aspects of chimney requirements, from replacement fireplaces right through to building complete new chimney systems, offering one-stop solution to all your chimney services.</p>
+        <p class="text-black text-sm md:text-base">
+          Our expert staff have many years’ experience in the chimney business, and have extensive knowledge of all the services and products we offer and supply. We cover all aspects of chimney requirements, from replacement fireplaces right through to building complete new chimney systems, offering one-stop solution to all your chimney services.
+        </p>
       </div>
     </div>
   </div>
-  
-  
-  
 </section>
+
+
+
+<section class="relative overflow-hidden w-full py-12 px-4">
+  <!-- Background Image -->
+  <img class="absolute w-full h-full object-cover z-0" src="./assets/about-a1-chimney.webp" alt="Chimney Background" />
+
+  <!-- Content Grid -->
+  <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    <!-- Card -->
+    <div class="flex flex-col justify-center items-center bg-white bg-opacity-80 px-6 py-10 gap-6 rounded-md">
+      <div class="w-10 h-10">
+        <img class="w-full h-full hover:scale-125 transition-all duration-300 " src="./assets/clock-solid.svg" alt="Clock Icon" />
+      </div>
+      <h2 class="text-2xl lg:text-3xl hover:text-yellow-900 cursor-pointer text-yellow-500 font-bold text-center">Reliable and On-Time</h2>
+      <p class="text-base lg:text-lg text-black font-semibold text-center">
+        We schedule specific appointment times so you won’t wait for us.
+      </p>
+    </div>
+
+    <!-- Repeat the same structure for the other 5 cards -->
+    <!-- You can optionally map this in JS/React if you're using a framework -->
+
+    <div class="flex flex-col justify-center items-center bg-white bg-opacity-80 px-6 py-10 gap-6 rounded-md">
+      <div class="w-10 h-10">
+        <img class="w-full h-full hover:scale-125 transition-all duration-300 " src="./assets/clock-solid.svg" alt="Clock Icon" />
+      </div>
+      <h2 class="text-2xl lg:text-3xl hover:text-yellow-900 cursor-pointer text-yellow-500 font-bold text-center">Reliable and On-Time</h2>
+      <p class="text-base lg:text-lg text-black font-semibold text-center">
+        We schedule specific appointment times so you won’t wait for us.
+      </p>
+    </div>
+
+    <!-- Repeat for remaining 4 cards... -->
+    <div class="flex flex-col justify-center items-center bg-white bg-opacity-80 px-6 py-10 gap-6 rounded-md">
+      <div class="w-10 h-10">
+        <img class="w-full h-full hover:scale-125 transition-all duration-300 " src="./assets/clock-solid.svg" alt="Clock Icon" />
+      </div>
+      <h2 class="text-2xl lg:text-3xl hover:text-yellow-900 cursor-pointer text-yellow-500 font-bold text-center">Reliable and On-Time</h2>
+      <p class="text-base lg:text-lg text-black font-semibold text-center">
+        We schedule specific appointment times so you won’t wait for us.
+      </p>
+    </div>
+
+    <div class="flex flex-col justify-center items-center bg-white bg-opacity-80 px-6 py-10 gap-6 rounded-md">
+      <div class="w-10 h-10">
+        <img class="w-full h-full hover:scale-125 transition-all duration-300 " src="./assets/clock-solid.svg" alt="Clock Icon" />
+      </div>
+      <h2 class="text-2xl lg:text-3xl hover:text-yellow-900 cursor-pointer text-yellow-500 font-bold text-center">Reliable and On-Time</h2>
+      <p class="text-base lg:text-lg text-black font-semibold text-center">
+        We schedule specific appointment times so you won’t wait for us.
+      </p>
+    </div>
+
+    <div class="flex flex-col justify-center items-center bg-white bg-opacity-80 px-6 py-10 gap-6 rounded-md">
+      <div class="w-10 h-10">
+        <img class="w-full h-full hover:scale-125 transition-all duration-300 " src="./assets/clock-solid.svg" alt="Clock Icon" />
+      </div>
+      <h2 class="text-2xl lg:text-3xl hover:text-yellow-900 cursor-pointer text-yellow-500 font-bold text-center">Reliable and On-Time</h2>
+      <p class="text-base lg:text-lg text-black font-semibold text-center">
+        We schedule specific appointment times so you won’t wait for us.
+      </p>
+    </div>
+
+    <div class="flex flex-col justify-center items-center bg-white bg-opacity-80 px-6 py-10 gap-6 rounded-md">
+      <div class="w-10 h-10">
+        <img class="w-full h-full hover:scale-125 transition-all duration-300 " src="./assets/clock-solid.svg" alt="Clock Icon" />
+      </div>
+      <h2 class="text-2xl lg:text-3xl hover:text-yellow-900 cursor-pointer text-yellow-500 font-bold text-center">Reliable and On-Time</h2>
+      <p class="text-base lg:text-lg text-black font-semibold text-center">
+        We schedule specific appointment times so you won’t wait for us.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
 
 
