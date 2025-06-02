@@ -27,3 +27,25 @@ const navMenu = document.getElementById('navMenu');
 hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('hidden');
 });
+
+
+
+
+  const { animate } = window.motion;
+  const slider = document.getElementById("slider");
+  const cardWidth = slider.children[0].offsetWidth + 16; // width + gap
+  let index = 0;
+
+  setInterval(() => {
+    index++;
+    if (index * cardWidth >= slider.scrollWidth - slider.clientWidth) {
+      index = 0;
+    }
+
+    animate(
+      slider,
+      { transform: `translateX(-${index * cardWidth}px)` },
+      { duration: 0.5, easing: "ease-in-out" }
+    );
+  }, 2000);
+
