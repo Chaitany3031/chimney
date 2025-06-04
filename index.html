@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
-  <body class="bg-black text-white overflow-hidden">
+  <body class="bg-black text-white">
     <header
       class="z-50 relative flex items-center justify-between p-4 h-[15vh] border-b-2 border-yellow-400 animate__animated animate__fadeInDown"
     >
@@ -39,7 +39,7 @@
       <!-- Full Nav (hidden on mobile) -->
       <nav
         id="navMenu"
-        class="z-10 hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-6 font-bold text-sm bg-black sm:bg-transparent absolute sm:static top-[100%] left-0 w-full sm:w-auto sm:h-auto px-4 sm:px-0 py-4 sm:py-0"
+        class="z-10 hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-6 font-bold text-xs bg-black sm:bg-transparent absolute sm:static top-[100%] left-0 w-full sm:w-auto sm:h-auto px-4 sm:px-0 py-4 sm:py-0"
       >
         <ul
           class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-white w-full sm:w-auto"
@@ -49,13 +49,14 @@
           <!-- OUR SERVICES DROPDOWN -->
           <li class="relative">
             <button
-              onclick="toggleDropdown('servicesDropdown')"
-              class="w-full text-left flex justify-between items-center hover:text-yellow-400"
+              
+              class="w-full text-left flex justify-between gap-2 items-center hover:text-yellow-400"
             >
-              OUR SERVICES ▾
+            <a href="./our-services/index.html">OUR SERVICES </a>
+              <span class=" " onclick="toggleDropdown('servicesDropdown')">▾</span>
             </button>
             <div
-              id="servicesDropdown"
+              id="servicesDropdown" 
               class="z-50 hidden absolute left-0 top-full bg-black border-4 border-yellow-500 mt-2 p-4 sm:w-[700px] w-full grid grid-cols-2 gap-4 text-white"
             >
               <!-- Left: Service Categories -->
@@ -918,7 +919,7 @@
     </section>
 
     <section
-      class="relative w-full  bg-fixed bg-center bg-cover bg-no-repeat flex flex-col items-center justify-start p-10"
+      class="relative w-full bg-fixed bg-center bg-cover bg-no-repeat flex flex-col items-center justify-start p-10"
       style="
         background-image: url('./assets/4-Major-Benefits-why-adding-a-fireplace-to-your-home-is-a-must.webp');
       "
@@ -926,15 +927,15 @@
       <div class="absolute inset-0 bg-white bg-opacity-80 z-10"></div>
 
       <div class="relative z-20 flex items-center gap-10 flex-col">
-        <p class="font-semibold text-5xl text-black">
+        <p class="font-semibold lg:text-5xl text-4xl text-black">
           OUR <span class="text-orange-600">Testimonials</span>
         </p>
 
         <div class="grid lg:grid-cols-[auto_auto] grid-rows-[auto_auto] gap-4">
           <div>
             <iframe
-              width="560"
-              height="315"
+              width="auto"
+              height="auto"
               src="https://www.youtube.com/embed/41FwAvgUJ7U?si=ZyweMcNhaKB4UmEd"
               title="YouTube video player"
               frameborder="0"
@@ -945,8 +946,8 @@
           </div>
           <div>
             <iframe
-              width="560"
-              height="315"
+              width=" auto"
+              height="auto"
               src="https://www.youtube.com/embed/gIGjb_WY_Wk?si=-qDlgK2930Xcvuwc"
               title="YouTube video player"
               frameborder="0"
@@ -958,84 +959,248 @@
         </div>
         <!-- ★ -->
 
-        <div class="relative flex gap-4 overflow-x-hidden w-[98vw]  ">
-          <div class="bg-gray-600 w-56 overflow-x-hidden  rounded-lg">
-            <div class="upper flex justify-between p-2 items-start border-b-2 ">
+        <div class="relative flex gap-4 overflow-x-hidden h-[auto] w-[98vw]">
+          <div class="bg-gray-600 w-56 overflow-x-hidden rounded-lg">
+            <div
+              class="upper flex justify-between lg:p-2 items-start border-b-2"
+            >
               <div>
                 <div>Suraj bisht</div>
                 <div>★★★★★</div>
               </div>
-              <div class="w-5"><img class="bg-white p-1 rounded-lg" src="./assets/google-brands.svg"/></div>
+              <div class="w-5">
+                <img
+                  class="bg-white p-1 rounded-lg"
+                  src="./assets/google-brands.svg"
+                />
+              </div>
             </div>
-            <div class="lower p-2">
-              <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique consectetur minima placeat? Dolorum odio quidem excepturi </p>
+            <div class="lower lg:p-2">
+              <p class="text-[10px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi similique consectetur minima placeat? Dolorum odio
+                quidem excepturi
+              </p>
             </div>
           </div>
-          <div class="bg-gray-600 w-56 ">
-            <div class="upper flex justify-between p-2 items-start border-b-2 ">
+          <div class="bg-gray-600 w-56">
+            <div class="upper flex justify-between p-2 items-start border-b-2">
               <div>
                 <div>Suraj bisht</div>
                 <div>★★★★★</div>
               </div>
-              <div class="w-5"><img class="bg-white p-1 rounded-lg" src="./assets/google-brands.svg"/></div>
+              <div class="w-5">
+                <img
+                  class="bg-white p-1 rounded-lg"
+                  src="./assets/google-brands.svg"
+                />
+              </div>
             </div>
             <div class="lower p-2">
-              <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique consectetur minima placeat? Dolorum odio quidem excepturi </p>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi similique consectetur minima placeat? Dolorum odio
+                quidem excepturi
+              </p>
             </div>
           </div>
-          <div class="bg-gray-600 w-56 ">
-            <div class="upper flex justify-between p-2 items-start border-b-2 ">
+          <div class="bg-gray-600 w-56">
+            <div class="upper flex justify-between p-2 items-start border-b-2">
               <div>
                 <div>Suraj bisht</div>
                 <div>★★★★★</div>
               </div>
-              <div class="w-5"><img class="bg-white p-1 rounded-lg" src="./assets/google-brands.svg"/></div>
+              <div class="w-5">
+                <img
+                  class="bg-white p-1 rounded-lg"
+                  src="./assets/google-brands.svg"
+                />
+              </div>
             </div>
             <div class="lower p-2">
-              <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique consectetur minima placeat? Dolorum odio quidem excepturi </p>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi similique consectetur minima placeat? Dolorum odio
+                quidem excepturi
+              </p>
             </div>
           </div>
-          <div class="bg-gray-600 w-56 ">
-            <div class="upper flex justify-between p-2 items-start border-b-2 ">
+          <div class="bg-gray-600 w-56">
+            <div class="upper flex justify-between p-2 items-start border-b-2">
               <div>
                 <div>Suraj bisht</div>
                 <div>★★★★★</div>
               </div>
-              <div class="w-5"><img class="bg-white p-1 rounded-lg" src="./assets/google-brands.svg"/></div>
+              <div class="w-5">
+                <img
+                  class="bg-white p-1 rounded-lg"
+                  src="./assets/google-brands.svg"
+                />
+              </div>
             </div>
             <div class="lower p-2">
-              <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique consectetur minima placeat? Dolorum odio quidem excepturi </p>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi similique consectetur minima placeat? Dolorum odio
+                quidem excepturi
+              </p>
             </div>
           </div>
-          <div class="bg-gray-600 w-56 ">
-            <div class="upper flex justify-between p-2 items-start border-b-2 ">
+          <div class="bg-gray-600 w-56">
+            <div class="upper flex justify-between p-2 items-start border-b-2">
               <div>
                 <div>Suraj bisht</div>
                 <div>★★★★★</div>
               </div>
-              <div class="w-5"><img class="bg-white p-1 rounded-lg" src="./assets/google-brands.svg"/></div>
+              <div class="w-5">
+                <img
+                  class="bg-white p-1 rounded-lg"
+                  src="./assets/google-brands.svg"
+                />
+              </div>
             </div>
             <div class="lower p-2">
-              <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique consectetur minima placeat? Dolorum odio quidem excepturi </p>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi similique consectetur minima placeat? Dolorum odio
+                quidem excepturi
+              </p>
             </div>
           </div>
-          <div class="bg-gray-600 w-56 ">
-            <div class="upper flex justify-between p-2 items-start border-b-2 ">
+          <div class="bg-gray-600 w-56">
+            <div class="upper flex justify-between p-2 items-start border-b-2">
               <div>
                 <div>Suraj bisht</div>
                 <div>★★★★★</div>
               </div>
-              <div class="w-5"><img class="bg-white p-1 rounded-lg" src="./assets/google-brands.svg"/></div>
+              <div class="w-5">
+                <img
+                  class="bg-white p-1 rounded-lg"
+                  src="./assets/google-brands.svg"
+                />
+              </div>
             </div>
             <div class="lower p-2">
-              <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique consectetur minima placeat? Dolorum odio quidem excepturi </p>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi similique consectetur minima placeat? Dolorum odio
+                quidem excepturi
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-black text-white py-10 px-6 relative overflow-hidden">
+    <section>
+      <div class="bg-black text-white py-12 px-4 md:px-12">
+        <h2 class="text-center text-3xl md:text-4xl font-bold mb-2">
+          GET <span class="text-yellow-400">IN</span> TOUCH
+        </h2>
+        <p class="text-center text-sm md:text-base text-yellow-300 mb-10">
+          Whatever is happening with your chimney, you have someone that will
+          sweep away the competition.
+        </p>
+
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-900 p-6 md:p-10 rounded-lg shadow-lg"
+        >
+          <!-- Left Contact Info -->
+          <div>
+            <h3 class="text-xl font-bold text-yellow-400 mb-4">
+              Talk to the Professionals at A1 Chimney Now!
+            </h3>
+            <p class="mb-4 text-sm md:text-base">
+              Get help with repairs on caps or liners, cracks or flashing
+              problems. A1 Chimney offers the help you need from a licensed and
+              insured crew.
+            </p>
+            <p class="mb-4 text-sm md:text-base">
+              Ask about chimney repair and annual chimney inspection and
+              maintenance that will keep your chimney safe and in good repair.
+            </p>
+            <div class="space-y-2 mt-6">
+              <div>
+                <span class="font-semibold text-yellow-400">Phone Number:</span
+                ><br />
+                (888) 984-4344
+              </div>
+              <div>
+                <span class="font-semibold text-yellow-400">Email Address:</span
+                ><br />
+                office@a-1chimney.com
+              </div>
+              <div>
+                <span class="font-semibold text-yellow-400">Service Area:</span
+                ><br />
+                Serving the Local Area
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+                required
+              />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+                required
+              />
+            </div>
+            <select
+              class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+              required
+            >
+              <option value="">-- Select Service --</option>
+              <option>Inspection</option>
+              <option>Repair</option>
+              <option>Sweeping</option>
+            </select>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="date"
+                class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+                required
+              />
+              <input
+                type="time"
+                class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-yellow-400 text-black font-bold py-3 rounded hover:bg-yellow-500 transition"
+            >
+              NEXT
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black text-white py-10 px-6 relative overflow-hidden border-b-2">
       <div
         class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
       >
@@ -1190,13 +1355,96 @@
           </ul>
         </div>
       </div>
+    </section>
+    
+
+
+    <section>
+      <div class="text-center py-10">
+    <h2 class="text-yellow-400 text-xl font-bold uppercase">
+      Our Chimney & Fireplace Services
+    </h2>
+
+    <!-- Tabs -->
+    <div class="flex justify-center space-x-2 space-y-3 mt-4 flex-wrap">
+      <button onclick="showTab('inspection', this)" class="tab-btn bg-yellow-400 text-black px-4 py-2 font-semibold">🔍 INSPECTION</button>
+      <button onclick="showTab('cleaning', this)" class="tab-btn bg-gray-700 px-4 py-2">🧽 CLEANING</button>
+      <button onclick="showTab('repair', this)" class="tab-btn bg-gray-700 px-4 py-2">🛠️ REPAIR</button>
+      <button onclick="showTab('installation', this)" class="tab-btn bg-gray-700 px-4 py-2">🔧 INSTALLATION</button>
+      <button onclick="showTab('replacements', this)" class="tab-btn bg-gray-700 px-4 py-2">🔁 REPLACEMENTS</button>
+      <button onclick="showTab('construction', this)" class="tab-btn bg-gray-700 px-4 py-2">🏗️ CONSTRUCTION / REBUILD</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="inspection" class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-6 px-4">
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔥 Chimney Inspection Level 1</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔥 Chimney Inspection Level 2</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔥 Chimney Inspection Level 3</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔥 Chimney Maintenance</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔥 Pellet Stove Inspection</div>
+    </div>
+
+    <div id="cleaning" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-6 px-4">
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🧼 Chimney Sweeping</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🧼 Dryer Vent Cleaning</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🧼 Creosote Removal</div>
+    </div>
+
+    <div id="repair" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-6 px-4">
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🧱 Crown Repair</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔥 Firebox Repair</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🧱 Masonry Repair</div>
+    </div>
+
+    <div id="installation" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-6 px-4">
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🛠️ Insert Installation</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🛠️ Stove Installation</div>
+    </div>
+
+    <div id="replacements" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-6 px-4">
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔁 Flue Liner Replacement</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🔁 Cap Replacement</div>
+    </div>
+
+    <div id="construction" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-6 px-4">
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🏗️ Chimney Rebuild</div>
+      <div class="bg-orange-500 px-4 py-2 flex items-center gap-2">🏗️ Fireplace Construction</div>
+    </div>
+
+  </div>
+    </section>
+
+
+    <footer class="grid grid-cols-3 items-start mb-6 border-t-2 border-orange-600 ">
+      <div class="w-1/2 mt-2" >
+        <img src="./assets/A1Chimney-Logo-W-2048x320 (1).webp" alt="">
+      </div>
+      <div class="flex flex-col justify-center items-center mt-2">
+       <div class="text-lg">
+         <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+       </div>
+       <div class="text-xs">
+        <span class="text-orange-300">Privacy Policy</span>|<span class="text-orange-300">Terms & Conditions</span>|<span class="text-orange-300">Sitemap</span>
+        <p class="text-xs">Copyright &copy; 2025 <span class="text-orange-300">A1 Chimney &reg;</span>. All Right Reserved</p>
+       </div>
+      </div>
+      <div class="flex justify-center items-center flex-col mt-2">
+       <p class="font-bold">A1 Chimney</p>
+       <p>★ ★ ★ ★ ★ </p>
+       <p class="text-xs">4.9 Stars - Based on 3218 Reviews</p>
+      </div>
+
+
+
     </footer>
 
     <!-- FontAwesome CDN for icons -->
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer
